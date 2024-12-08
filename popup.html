@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Image Collector</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="css/jquery-ui.css" />
+
+  <style>
+
+    .card{
+      display: inline-block;
+      border: 1px solid #ccc;
+      width: 140px;
+      padding: 10px;
+      margin: 10px;
+      text-align: center;
+    }
+    .card .download-img{
+
+      opacity: 0.3;
+    }
+    .card-selected{
+      opacity: 1 !important;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"><img src="images/icon-48.png"/> Image Doanloader</a>
+   
+      <div class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" id = "imageName" placeholder="Image Name" />
+        <button class="btn btn-success my-2 my-sm-0 mr-sm-2" id="refreshButton">Refresh</button> <button class="btn btn-success my-2 my-sm-0" id="downloadButton">Download Images</button>
+      </div>
+    
+  </nav>
+  <div style="min-width: 766px;height: 600; padding: 10px;">
+    <label for="amount">Filter images by width:</label> <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;"></input>
+    <div id="slider-range" style="margin: 10px;"></div>
+    
+   
+    <div id="imageContainer"></div>
+  </div>
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popup.js"></script>
+</body>
+</html>
